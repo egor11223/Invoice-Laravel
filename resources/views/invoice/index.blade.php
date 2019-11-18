@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="invoice-info">
                                             <div class="qr-code">
-                                                {!! QrCode::size(150)->generate(Request::url()); !!}
+                                                {!! QrCode::size(150)->generate(url('/').'/invoice/'.$invoice->id.'/edit'); !!}
                                             </div>
                                             <div class="form-inline form-group">
                                                 <label class="label-box required">Customer</label>
